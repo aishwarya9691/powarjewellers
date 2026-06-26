@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#5E244E;
+    background:#2B0505;
 }
 
 /* Navbar */
@@ -20,38 +20,37 @@ body{
 }
 
 .logo img{
-    width: 150px;
-    height: auto;
-    display: block;
+    width:150px;
+    height:auto;
+    display:block;
 }
 
 .nav-links{
     display:flex;
     list-style:none;
     gap:30px;
-    color:#b8860b;
 }
 
 .nav-links a{
     text-decoration:none;
     color:#b8860b;
     font-size:18px;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .nav-links a:hover{
-    color:#b8860b;
+    color:white;
 }
 
-/* Hero */
+/* Hero Section */
 
 .hero{
-    min-height:80vh;
     width:100%;
+    min-height:100vh;
 
-    background-image:
-    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url("images/jewellery-banner.jpeg");
+    background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/back.jpeg");
 
     background-size:cover;
     background-position:center;
@@ -67,30 +66,39 @@ body{
 
 .hero-content{
     color:white;
+    max-width:900px;
 }
 
 .hero-content h1{
     font-size:60px;
     margin-bottom:15px;
 }
+
 .hero-content h2{
-    font-size: 35px;
-    margin-bottom: 15px;
+    font-size:35px;
+    margin-bottom:15px;
     color:#b8860b;
 }
 
 .hero-content p{
     font-size:22px;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
 .btn{
+    display:inline-block;
+    margin:10px;
     text-decoration:none;
     background:#b8860b;
     color:black;
     padding:12px 30px;
     border-radius:30px;
     font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
 }
 
 /* Categories */
@@ -110,7 +118,7 @@ body{
     text-align:center;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.3s;
+    transition:0.3s;
 }
 
 .card:hover{
@@ -146,7 +154,8 @@ footer{
 footer p{
     margin-top:10px;
 }
-/* WhatsApp Button */
+
+/* WhatsApp */
 
 .whatsapp{
     position:fixed;
@@ -167,7 +176,7 @@ footer p{
     transform:scale(1.1);
 }
 
-/* Responsive */
+/* Mobile Responsive */
 
 @media(max-width:768px){
 
@@ -182,20 +191,50 @@ footer p{
         gap:15px;
     }
 
+    .hero{
+    width:100%;
+    height:100vh;
+
+    background-image:url("images/back.jpeg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Hide text on image */
+.hero-content{
+    display:none;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .hero{
+        height:100vh;
+        background-size:cover;
+        background-position:center;
+    }
+
+}
     .hero-content h1{
         font-size:38px;
+    }
+
+    .hero-content h2{
+        font-size:26px;
     }
 
     .hero-content p{
         font-size:18px;
     }
 
-    @media (max-width:768px){
-
-    .hero{
-        min-height:70vh;
-        background-position:center;
+    .btn{
+        display:block;
+        margin:10px auto;
+        width:220px;
     }
-    }
-
 }
