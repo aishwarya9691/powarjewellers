@@ -181,6 +181,12 @@ footer p{
     .hero-content p{
         font-size:18px;
     }
+    .hero{
+        background-size: 100%;  
+    background-repeat: no-repeat;
+    background-color: #2B0505;
+ 
+    }
 }
 
 .hero-content{
