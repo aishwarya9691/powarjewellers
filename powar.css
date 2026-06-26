@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#2B0505;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#2B0505;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+    color:#b8860b;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#b8860b;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#b8860b;
+}
+
+/* Hero */
+
+.hero{
+    height:80vh;
+    background:#604652
+    url("images/back..jpeg");
+    background-size:cover;  
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+.hero-content h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+    color:#b8860b;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#b8860b;
+    color:black;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* Categories */
+
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:70px 8%;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#b8860b;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:20px;
+}
+
+.card a{
+    text-decoration:none;
+    color:white;
+    background:#111;
+    padding:10px 20px;
+    border-radius:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+/*whatsapp button*/
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:1000;
+}
+
+.whatsapp img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.whatsapp img:hover{
+    transform:scale(1.1);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+}
+
+.hero-content{
+    display: none;
+}
